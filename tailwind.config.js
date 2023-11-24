@@ -72,5 +72,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("tailwindcss-bg-patterns")],
+  plugins: [require("tailwindcss-animate")],
 }

@@ -84,10 +84,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Lights */}
         <div
           className={cn(
-            "absolute z-10 h-full w-screen bg-gradient-to-bl from-transparent via-neutral-50 to-transparent opacity-5",
-            `from-${45}%`,
-            `to-${55}%`,
-            `via-${50}%`
+            "absolute z-10 h-full w-screen bg-gradient-to-bl from-transparent from-45% via-neutral-50 via-50% to-transparent to-55% opacity-5"
           )}
         />
 
