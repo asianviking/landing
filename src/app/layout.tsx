@@ -76,11 +76,22 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <body
         className={cn(
-          "galaxy-pattern min-h-screen bg-background font-sans antialiased",
+          "galaxy-pattern relative min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
           fontHeading.variable
         )}
       >
+        {/* Lights */}
+        <div
+          className={cn(
+            "absolute z-10 h-full w-screen bg-gradient-to-bl from-transparent via-neutral-50 to-transparent opacity-5",
+            `from-${45}%`,
+            `to-${55}%`,
+            `via-${50}%`
+          )}
+        />
+
+        {/* Content */}
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <Analytics />
